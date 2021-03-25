@@ -69,7 +69,7 @@ exports.Parse = function() {
 		token_nr += 1;
 		v = t.value;
 		a = t.type;
-		if (a === 'INDETIFIER') {
+		if (a === 'IDENTIFIER') {
 			o = symbol_table[v];
 			o = o && typeof o !== 'function' ? o : symbol_table['(name)'];
 			a = 'name';
