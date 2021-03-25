@@ -1,0 +1,10 @@
+print("Hello!")
+print("This is a Python Interpreter in Javascript!")
+
+def test(input):
+	if input == "Furret":
+		return "Your test is: true"
+	else:
+		return "Your test is: false"
+
+print(test("Furret"))
