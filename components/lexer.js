@@ -110,7 +110,7 @@ exports.Lex = function() {
 			} else if (isWord(c)) {
 				var word = c;
 				while (isWord(advance())) word += c;
-				addToken('INDETIFIER', word);
+				addToken('IDENTIFIER', word);
 			} else throw 'Unrecognized token.';
 		}
 		if (tokens[tokens.length - 1].value != 'newline') {
